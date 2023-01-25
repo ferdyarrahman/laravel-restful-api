@@ -46,7 +46,7 @@ Perinatah di atas berhasil maka akan mendapatkan 2 file baru, yaitu:
 - `database/migrations/2023_01_23_043345_create_posts_table.php`
 
 Selanjutnya buka file `database/migrations/2023_01_23_043345_create_posts_table.php`, pada `function up`, ubah kode menjadi seperti berikut ini:
-```
+```php
 public function up()
 {
   Schema::create('posts', function (Blueprint $table) {
@@ -68,7 +68,7 @@ php artisan migrate
 ## Menambahkan Mass Assigment
 Mass Assigment memungkinkan untuk mengizinkan sebuah field dari table agar dapat menyimpan sebuah data.
 Silahkan buka file `app/Models/Post.php`, kemudian ubah kode menjadi seperti berikut:
-```
+```php
 <?php
 
 namespace App\Models;
@@ -105,7 +105,7 @@ Melakukan generate resources silahkan jalankan perintah berikut ini di dalam ter
 php artisan make:resource PostResource
 ```
 maka akan mendapatkan 1 file resource baru `app/Http/Resources/PostResource.php`. Selanjutnya dapat melakukan kustomisasi resource seperti berikut ini:
-```
+```php
 <?php
 
 namespace App\Http\Resources;
@@ -157,7 +157,7 @@ php artisan make:controller Api/PostController
 Maka akan terbentuk 1 file controller baru `app/Http/Controllers/Api/PostController.php`.
 
 kemudian ubah kode-nya menjadi seperti berikut:
-```
+```php
 <?php
 
 namespace App\Http\Controllers\Api;
@@ -270,7 +270,7 @@ class PostController extends Controller
 
 ## Membuat Route API Resource
 Setelah membuat controller, selanjutnya menambahkan route dengan membuka file `routes/api.php`, kemudian ubah kode-nya menjadi seperti berikut:
-```
+```php
 <?php
 
 use Illuminate\Http\Request;
