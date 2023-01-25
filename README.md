@@ -304,3 +304,4 @@ php artisan route:list
 ## Uji Coba Rest API
 Lakukan uji coba Rest API menggunakan aplikasi Postman, dengan URL berikut http://localhost:8000/api/posts dan untuk method-nya `GET`.
 Jika berhasil maka akan menampilkan response data dan code http `200`
+
